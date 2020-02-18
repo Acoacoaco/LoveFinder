@@ -23,6 +23,10 @@ body {
     top: 28px;
 }
 
+.p-4 {
+    padding-bottom: 0 !important;
+}
+
 .face-img {
     border-radius: 50%;
     height: 35vh;
@@ -36,11 +40,6 @@ body {
     font-size: 40px;
     text-align: center;
 }
-
-// .modal {
-//     // margin-top: 25px;
-    
-// }
 
 .modal-header {
     background-color: #343a40;
@@ -58,14 +57,18 @@ body {
     color: #ffffff;
     background-color: #181818;
     text-align: center;
+    p {
+        margin-top: 8px;
+    }
     img {
         float: right;
-        margin: 0 0 10px 10px;
+        margin-left: 10px;
     }
     span {
         font-weight: bold;
     }
     .gender-styled {
+        // margin-top: 140px;
         text-transform: capitalize;
         font-weight: normal;
     }

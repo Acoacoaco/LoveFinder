@@ -23,6 +23,10 @@ body {
   top: 28px;
 }
 
+.p-4 {
+  padding-bottom: 0 !important;
+}
+
 .face-img {
   border-radius: 50%;
   height: 35vh;
@@ -56,9 +60,13 @@ body {
   text-align: center;
 }
 
+.modal-body p {
+  margin-top: 8px;
+}
+
 .modal-body img {
   float: right;
-  margin: 0 0 10px 10px;
+  margin-left: 10px;
 }
 
 .modal-body span {
