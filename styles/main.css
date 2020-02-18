@@ -36,8 +36,29 @@ body {
   text-align: center;
 }
 
+.modal-header {
+  background-color: #343a40;
+  border-bottom: 0;
+}
+
+.modal-header h3 {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.modal-header button {
+  color: #ffffff;
+}
+
 .modal-body {
+  color: #ffffff;
+  background-color: #181818;
   text-align: center;
+}
+
+.modal-body img {
+  float: right;
+  margin: 0 0 10px 10px;
 }
 
 .modal-body span {
@@ -46,11 +67,12 @@ body {
 
 .modal-body .gender-styled {
   text-transform: capitalize;
+  font-weight: normal;
 }
 
 .modal-body .my-link {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .modal-body .map {

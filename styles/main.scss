@@ -38,20 +38,40 @@ body {
 }
 
 // .modal {
-//     margin-top: 25px;
+//     // margin-top: 25px;
+    
 // }
 
+.modal-header {
+    background-color: #343a40;
+    h3 {
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    button {
+        color: #ffffff;;
+    }
+    border-bottom: 0;
+}
+
 .modal-body { 
+    color: #ffffff;
+    background-color: #181818;
     text-align: center;
+    img {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
     span {
         font-weight: bold;
     }
     .gender-styled {
         text-transform: capitalize;
+        font-weight: normal;
     }
     .my-link {
         text-decoration: none;
-        color: #000000;
+        color:#ffffff;
     }
     .map {
         width: 100%;
