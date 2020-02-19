@@ -23,7 +23,7 @@ $.ajax({
                 </div>
                 <div class="modal-body">
                     <img src="${user.picture.large}">
-                    <p id="gender-span"><span>Gender:</span><br/><span id="updated-gender" class="gender-styled">${user.gender}</span></p>
+                    <p id="gender-span"><span>Gender:</span><br/><span id="updated-gender" class="gender-styled">${user.gender}</span><span id="gender-icon"></span></p>
                     <p><span>Age:</span><br/>${user.dob.age} y.o.</p>
                     <p><span>Living in:</span><br/><a class="my-link" href="https://maps.google.com/?q= ${user.location.city} ${user.location.street.name}"> ${user.location.postcode}, ${user.location.street.name} ${user.location.street.number}, ${user.location.city}, ${user.location.state}, ${user.location.country} (${user.nat})</a></p>
                     <p><span>Current location:</span><iframe class="map" src="https://maps.google.com/maps?q=${user.location.coordinates.latitude},${user.location.coordinates.longitude}&hl=en&z=1&amp;output=embed" frameborder="0" allowfullscreen></iframe>
@@ -44,9 +44,9 @@ $.ajax({
 
 function genderIcons() {
     if ($('#updated-gender').text() == 'male') {
-        $('#gender-span').append(' <span class="fas fa-mars"></span>');
+        $('#gender-icon').html(' <span class="fas fa-mars"></span>');
     } else {
-        $('#gender-span').append(' <span class="fas fa-venus"></span>');
+        $('#gender-icon').html(' <span class="fas fa-venus"></span>');
     }
 };
 
