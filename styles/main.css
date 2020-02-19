@@ -45,9 +45,13 @@ body {
   border-bottom: 0;
 }
 
-.modal-header h3 {
+.modal-header h4, .modal-header h6 {
   color: #ffffff;
   margin-bottom: 0;
+}
+
+.modal-header h6 {
+  margin: 7px 8px 0 0;
 }
 
 .modal-header button {
@@ -86,6 +90,10 @@ body {
 .modal-body .map {
   width: 100%;
   height: 200px;
+}
+
+.modal-body .last-p {
+  margin-bottom: 0;
 }
 
 .decide {
